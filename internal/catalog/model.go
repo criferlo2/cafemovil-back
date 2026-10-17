@@ -8,14 +8,15 @@ type Category struct {
 }
 
 type Product struct {
-	ID           string  `json:"id"`
-	Name         string  `json:"name"`
-	Brand        string  `json:"brand"`
-	CategoryID   string  `json:"categoryId"`
-	CategoryName string  `json:"categoryName"`
-	Presentation string  `json:"presentation"`
-	Price        float64 `json:"price"`
-	Featured     bool    `json:"featured"`
+	ID           string   `json:"id"`
+	Name         string   `json:"name"`
+	Brand        string   `json:"brand"`
+	CategoryID   string   `json:"categoryId"`
+	CategoryName string   `json:"categoryName"`
+	Presentation string   `json:"presentation"`
+	Price        *float64 `json:"price"`
+	Currency     string   `json:"currency"`
+	Featured     bool     `json:"featured"`
 }
 
 type ProductFilter struct {
