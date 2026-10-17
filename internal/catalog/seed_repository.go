@@ -19,13 +19,13 @@ func NewSeedRepository() *SeedRepository {
 	return &SeedRepository{
 		categories: categories,
 		products: []Product{
-			{ID: "prd_001", Name: "Origen Sierra Nevada", Brand: "Devoción", CategoryID: "coffee", CategoryName: "Café", Presentation: "Libra 500g", Price: 42900, Featured: true},
-			{ID: "prd_002", Name: "Café Especial Huila", Brand: "Amor Perfecto", CategoryID: "coffee", CategoryName: "Café", Presentation: "Kilogramo", Price: 79900, Featured: true},
-			{ID: "prd_003", Name: "Sachets Cold Brew", Brand: "Juan Valdez", CategoryID: "coffee", CategoryName: "Café", Presentation: "Caja x 10 sachets", Price: 29900, Featured: true},
-			{ID: "prd_004", Name: "Prensa Francesa Vidrio", Brand: "Bialetti", CategoryID: "accessories", CategoryName: "Accesorios", Presentation: "600ml", Price: 89900, Featured: true},
-			{ID: "prd_005", Name: "Cafetera Moka Express", Brand: "Bialetti", CategoryID: "machines", CategoryName: "Máquinas para hacer café", Presentation: "6 tazas", Price: 159900, Featured: true},
-			{ID: "prd_006", Name: "Manual de Catación Básica", Brand: "Café Lab", CategoryID: "manuals", CategoryName: "Manuales", Presentation: "PDF", Price: 19900, Featured: true},
-			{ID: "prd_007", Name: "Historias del Café Colombiano", Brand: "Editorial Andina", CategoryID: "books", CategoryName: "Libros", Presentation: "Tapa blanda", Price: 54900, Featured: true},
+			{ID: "prd_001", Name: "Origen Sierra Nevada", Brand: "Devoción", CategoryID: "coffee", CategoryName: "Café", Presentation: "Libra 500g", Price: new(float64(42900)), Currency: "COP", Featured: true},
+			{ID: "prd_002", Name: "Café Especial Huila", Brand: "Amor Perfecto", CategoryID: "coffee", CategoryName: "Café", Presentation: "Kilogramo", Price: new(float64(79900)), Currency: "COP", Featured: true},
+			{ID: "prd_003", Name: "Sachets Cold Brew", Brand: "Juan Valdez", CategoryID: "coffee", CategoryName: "Café", Presentation: "Caja x 10 sachets", Price: new(float64(29900)), Currency: "COP", Featured: true},
+			{ID: "prd_004", Name: "Prensa Francesa Vidrio", Brand: "Bialetti", CategoryID: "accessories", CategoryName: "Accesorios", Presentation: "600ml", Price: new(float64(89900)), Currency: "COP", Featured: true},
+			{ID: "prd_005", Name: "Cafetera Moka Express", Brand: "Bialetti", CategoryID: "machines", CategoryName: "Máquinas para hacer café", Presentation: "6 tazas", Price: new(float64(159900)), Currency: "COP", Featured: true},
+			{ID: "prd_006", Name: "Manual de Catación Básica", Brand: "Café Lab", CategoryID: "manuals", CategoryName: "Manuales", Presentation: "PDF", Price: new(float64(19900)), Currency: "COP", Featured: true},
+			{ID: "prd_007", Name: "Historias del Café Colombiano", Brand: "Editorial Andina", CategoryID: "books", CategoryName: "Libros", Presentation: "Tapa blanda", Price: new(float64(54900)), Currency: "COP", Featured: true},
 		},
 	}
 }
